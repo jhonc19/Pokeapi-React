@@ -8,8 +8,8 @@ La api usada es [PokeApi](https://pokeapi.co/)
 
 ## Tecnologias
 
-Axios: Para el consumo de los endpoints
-Context API: Para la administración de los estados globales
+Axios: Para el consumo de los endpoints.
+Context API: Para la administración de los estados globales.
 
 ## Patrones de diseño
 
