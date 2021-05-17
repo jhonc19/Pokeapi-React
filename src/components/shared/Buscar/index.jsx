@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 
-import TextField from '@material-ui/core/TextField';
-import Grid from '@material-ui/core/Grid';
+import { TextField, Grid } from '@material-ui/core';
 
 import Search from '@material-ui/icons/Search';
 

@@ -1,12 +1,16 @@
 import React, { useContext } from 'react';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import FavoriteOutlined from '@material-ui/icons/FavoriteOutlined';
-import useStyles from './CardPokemon.styles';
 
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  IconButton,
+  Typography,
+} from '@material-ui/core';
+
+import FavoriteOutlined from '@material-ui/icons/FavoriteOutlined';
+
+import useStyles from './CardPokemon.styles';
 import PokemonContext from './../../../context/Pokemon/PokemonContext';
 import { getIconByType, capitalizeString } from './../../../utils';
 

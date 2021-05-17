@@ -1,25 +1,30 @@
 import React, { useContext } from 'react';
 
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
+import {
+  AppBar,
+  Toolbar,
+  IconButton,
+  Drawer,
+  Divider,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Box,
+} from '@material-ui/core';
+
+import {
+  ChevronLeft as ChevronLeftIcon,
+  Menu as MenuIcon,
+  People as PeopleIcon,
+  FavoriteOutlined as FavoriteOutlinedIcon,
+} from '@material-ui/icons';
+
 import clsx from 'clsx';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import Drawer from '@material-ui/core/Drawer';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import Divider from '@material-ui/core/Divider';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 
-import PeopleIcon from '@material-ui/icons/People';
-import FavoriteOutlinedIcon from '@material-ui/icons/FavoriteOutlined';
-import ListItemText from '@material-ui/core/ListItemText';
-
-import { useStyles } from './Header.styles';
-import StyleBadge from './StyleBadge';
 import PokemonContext from './../../../context/Pokemon/PokemonContext';
-import { Box } from '@material-ui/core';
+import StyleBadge from './StyleBadge';
+import { useStyles } from './Header.styles';
 
 const Header = () => {
   const classes = useStyles();
