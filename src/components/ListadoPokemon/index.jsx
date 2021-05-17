@@ -21,11 +21,9 @@ const ListadoPokemon = ({ page }) => {
     clearPokemons,
   } = pokemonContext;
 
-  console.log(PokemonContext, '2');
-
   useEffect(() => {
     getFavorites();
-  });
+  }, []);
 
   useEffect(() => {
     clearPokemons();
