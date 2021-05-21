@@ -40,10 +40,8 @@ const PokemonState = (props) => {
     let favoriteList;
 
     window.localStorage.getItem('favorite_pokemon') !== null
-      ? (favoriteList = window.localStorage.getItem('favorite_pokemon'))
+      ? (favoriteList = JSON.parse(window.localStorage.getItem('favorite_pokemon')))
       : (favoriteList = []);
-
-    favoriteList = JSON.parse(favoriteList);
 
     dispatch({
       type: 'SET_FAVORITE',
@@ -109,10 +107,9 @@ const PokemonState = (props) => {
     let favoriteList;
 
     window.localStorage.getItem('favorite_pokemon') !== null
-      ? (favoriteList = window.localStorage.getItem('favorite_pokemon'))
+      ? (favoriteList = JSON.parse(window.localStorage.getItem('favorite_pokemon')))
       : (favoriteList = []);
 
-    favoriteList = JSON.parse(favoriteList);
     const isFavorite = favoriteList.indexOf(namePokemon);
 
     isFavorite >= 0
